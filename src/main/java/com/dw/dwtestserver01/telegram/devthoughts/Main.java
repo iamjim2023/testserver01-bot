@@ -8,11 +8,7 @@ public class Main {
     public static void main(String [] args){
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-//            Uncomment the API that you want to run the message in telegram
-
-//            botsApi.registerBot(new DwBot());
-            botsApi.registerBot(new Error());
-//            botsApi.registerBot(new Debugging());
+            botsApi.registerBot(new DwBot());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
